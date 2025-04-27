@@ -1,11 +1,15 @@
+# 🚀 Wedding Website Project
+
+![Deployed](https://img.shields.io/badge/Deployed-%F0%9F%9A%80-brightgreen)
+
 # [pawelweronika.fun](https://pawelweronika.fun)
 
-Strona internetowa stworzona z okazji ślubu.  
-Zawiera informacje o wydarzeniu, lokalizacjach, formularz potwierdzenia obecności oraz licznik odliczający czas do wielkiego dnia.
+A wedding website created for a special occasion.  
+It contains information about the event, locations, an RSVP confirmation form, and a countdown timer to the big day.
 
 ---
 
-## Technologie
+## Technologies
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -15,20 +19,20 @@ Zawiera informacje o wydarzeniu, lokalizacjach, formularz potwierdzenia obecnoś
 
 ---
 
-## Funkcjonalności
+## Features
 
-### ⏳ Licznik odliczający czas
-- Odlicza dni, godziny i minuty do daty ślubu.
+### ⏳ Countdown Timer
+- Counts down the days, hours, and minutes to the wedding date.
 
-### 📩 Formularz RSVP
-- Umożliwia gościom potwierdzenie obecności.
-- Dane są zapisywane w bazie MySQL.
+### 📩 RSVP Form
+- Allows guests to confirm their attendance.
+- Data is stored in a MySQL database.
 
-### 📸 Galeria zdjęć
-- Slider z wybranymi zdjęciami.
-- Link do dysku na zdjęcia.
+### 📸 Photo Gallery
+- Slider showcasing selected photos.
+- Link to a cloud drive for photo sharing.
 
-### 📍 Lokalizacje
-- Mapy Google z miejscem ceremonii i przyjęcia.
+### 📍 Locations
+- Google Maps integration with ceremony and reception locations.
 
 ---
