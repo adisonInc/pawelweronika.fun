@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bierzemy ślub! W&P</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img class="sunflower sunflower-top-left" src="images/sunflower.png" alt="Słonecznik">
+    <img class="sunflower sunflower-top-right" src="images/sunflower.png" alt="Słonecznik">
+
+    <div class="container">
+        <header class="header">
+            <h3>Bierzemy ślub!</h3>
+            <h4>06/09/2025</h4>
+            <h1>Weronika i Paweł</h1>
+        </header>
+
+        <div id="date">
+            <div class="counter">
+                <img src="images/samolot.png" alt="Samolot" class="airplane-corner">
+                <div class="counter-numbers">
+                    <div class="counter-item">
+                        <h3 id="days"></h3>
+                        <div>Dni</div>
+                    </div>
+                    <div class="counter-item">
+                        <h3 id="hours"></h3>
+                        <div>godziny</div>
+                    </div>
+                    <div class="counter-item">
+                        <h3 id="minutes"></h3>
+                        <div>minuty</div>
+                    </div>
+                </div>
+                <div class="counter-caption">Odliczamy dni do odlotu...</div>
+            </div>
+        </div>
+
+        <div class="header"></div>
+
+        <div class="mission-container">
+            <div class="info-slider">
+                <img src="images/roza.png" alt="Róża" class="rose-corner">
+                <div class="slider">
+                    <img src="images/photo1.jpeg" alt="Zdjęcie 1">
+                    <img src="images/photo2.jpeg" alt="Zdjęcie 2">
+                    <img src="images/photo3.jpeg" alt="Zdjęcie 3">
+                    <img src="images/photo4.jpeg" alt="Zdjęcie 4">
+                    <img src="images/photo5.jpeg" alt="Zdjęcie 5">
+                    <img src="images/photo6.jpeg" alt="Zdjęcie 6">
+                    <img src="images/photo7.jpeg" alt="Zdjęcie 7">
+                </div>
+                <div class="slider-controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="slider-caption">Miłość wisi w powietrzu</div>
+            </div>
+
+            <div class="mission-text" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                <p>Houston, mamy misję… i potrzebujemy załogi na najważniejszy lot w naszym życiu!</p>
+                <p>Na pokładzie czeka niezapomniana podróż pełna miłości, radości i wspólnej zabawy. Poniżej znajdziecie wszystkie niezbędne współrzędne: miejsce startu (kościół), lądowisko (sala weselna) oraz specjalny formularz, dzięki któremu potwierdzicie swoją gotowość do lotu. Po zakończeniu lotu otrzymacie również dostęp do archiwum zdjęć z całego dnia!</p>
+                <p>Liczymy na Waszą obecność – bez Was ta podróż nie będzie kompletna!</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">Lokalizacje</h2>
+            <div class="maps">
+                <div class="map-container">
+                    <h2>Miejsce Odlotu</h2>
+                    <div class="map-content">
+                        <a class="mapka" href="https://maps.app.goo.gl/RU4sEc3pLEjoiLyn9">
+                            Parafia pw. Podwyższenia Krzyża Św. w Hartowcu
+                        </a>
+                        <iframe class="map-frame" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=kosciol%20hartowiec+(Ko%C5%9Bci%C3%B3%C5%82)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <h2>Miejsce Przylotu</h2>
+                    <div class="map-content">
+                        <a class="mapka" href="#">Hartek Ośrodek Wypoczynkowy</a>
+                        <iframe class="map-frame" src="https://maps.google.com/maps?width=300&amp;height=300&amp;hl=en&amp;q=+(Hartek%20o)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Pomóżcie nam stworzyć odlotowe wspomnienia</h2>
+            <div class="photoDiv">
+                <a class="photoLink" href="https://drive.google.com/drive/my-drive">
+                    <img src="images/photo.png" alt="Ikona galerii">
+                    <p>Dysk do zdjęć</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Odprawa, tutaj zaznacz swoją obecność</h2>
+            <form class="form" method="POST" action="save.php">
+                <label for="full_name">Imię i nazwisko:</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <div class="form-group">
+                    <label>Osoba towarzysząca:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="companion_yes" name="companion" value="tak">
+                        <label for="companion_yes">Tak</label>
+                        <input type="radio" id="companion_no" name="companion" value="nie" checked>
+                        <label for="companion_no">Nie</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Zakwaterowanie w hotelu:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="hotel_yes" name="hotel" value="tak">
+                        <label for="hotel_yes">Tak</label>
+                        <input type="radio" id="hotel_no" name="hotel" value="nie" checked>
+                        <label for="hotel_no">Nie</label>
+                    </div>
+                </div>
+
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        function startCountdown() {
+            const targetDate = new Date("2025-09-06T16:00:00").getTime();
+
+            setInterval(function () {
+                const now = new Date().getTime();
+                let distance = targetDate - now;
+
+                if (distance < 0) {
+                    document.getElementById("headline").innerText = "To już dziś!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                distance %= (1000 * 60 * 60 * 24);
+
+                const hours = String(Math.floor(distance / (1000 * 60 * 60))).padStart(2, '0');
+                distance %= (1000 * 60 * 60);
+
+                const minutes = String(Math.floor(distance / (1000 * 60))).padStart(2, '0');
+
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+            }, 100);
+        }
+
+        startCountdown();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
