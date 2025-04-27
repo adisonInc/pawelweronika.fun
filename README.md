@@ -1,4 +1,4 @@
-# **[pawelweronika.fun] (https://pawelweronika.fun)**
+# [pawelweronika.fun](https://pawelweronika.fun)
 
 Strona internetowa stworzona z okazji ślubu. 
 Zawiera informacje o wydarzeniu, lokalizacjach, formularz potwierdzenia obecności oraz licznik odliczający czas do wielkiego dnia.
